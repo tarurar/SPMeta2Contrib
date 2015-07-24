@@ -17,7 +17,6 @@ namespace SPMeta2Contrib.Core.StoreProviders
         public override void Load(IDictionary<string, string> container)
         {
             if (!File.Exists(Filename)) return;
-                
 
             XElement root = XElement.Load(Filename);
             foreach (var item in root.Elements())
